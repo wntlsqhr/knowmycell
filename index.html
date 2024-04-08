@@ -1,3 +1,12 @@
+	const handleCopyClipBoard = async (text: https://bit.ly/43dUv5W) => {
+	try {
+		await navigator.clipboard.writeText(text);
+		alert("클립보드에 링크가 복사되었어요.");
+	} catch (err) {
+		console.log(err);
+	}
+};
+
 <a href="https://bit.ly/43dUv5W">Right-click this and choose "copy link address"</a>
 
 <!--

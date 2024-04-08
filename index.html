@@ -1,50 +1,30 @@
-<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=661399e8172e7b0019fd93ef&product=image-share-buttons&source=platform" async="async"></script>
+ const [copySuccess, setCopySuccess] = useState(false);
 
-const Menu = ({ 
+  const handleCopyClick = () => {
+    const url = window.location.href;
+    const textArea = document.createElement('textarea');
+    textArea.value = url;   
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
 
-  const copyUrlRef = React.useRef()
-  
-  // 공유하기 버튼 클릭하면 뜨는 팝업
-  // 인스타그램의 경우, ... 버튼을 클릭했을 때 뜨는 메뉴 팝업.
-  // 팝업의 body 부분이 <ShareButtons /> 컴포넌트이다.
-  const onClickShare = () => {
-    const payload = {
-      ...,
-      description: () => <ShareButtons />
-    }
-    runPopup(payload)
-    // runPopup 함수는 다른 곳에 구현되어있다.
-  }
+    setCopySuccess(true);
 
-  const ShareButtons = () => {
-    return (
-      <Wrapper>
-        <FlexDiv>
-          // 카카오톡 버튼
-        </FlexDiv>
-        <FlexDiv>
-          <StyledButton>
-            <ButtonItem type={ButtonType.SHARE_COPY_URL} onClick={copyUrl} />
-            <form>
-              <TextArea
-                ref={https://bit.ly/43dUv5W}
-                value={window.location.href}
-              />
-            </form>
-          </StyledButton>
-          <Caption>링크복사</Caption>
-        </FlexDiv>
-      </Wrapper>
-    )}
-  
-  // Menu 함수형 컴포넌트의 return 렌더링 파트
+    setTimeout(() => {
+      setCopySuccess(false);
+    }, 2000);
+  };
+
   return(
-     <MenuBar>
-     	<ButtonItem type={ButtonType.SHARE} onClick={onClickShare} />
-		// 기타 버튼 컴포넌트
-     </MenuBar>
-  )
- })
+    <div>
+       <button
+        onClick={handleCopyClick}
+        className={`link-icon ${copySuccess ? 'on' : ''}`}>링크
+       </button>
+    </div>
+  );
+}
 
 
 

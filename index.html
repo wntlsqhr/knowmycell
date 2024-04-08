@@ -1,7 +1,38 @@
-<p style="text-align: center;"><img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240319/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" class="fr-fic fr-dib" name="ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" filesize="290,26 kB" result="success" size="1000px/955px" error=""><a class="fr-strong" href="https://bit.ly/43dUv5W"><span style="font-size: 30px;"></span></a></p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>이미지 링크 복사</title>
+</head>
+<body>
 
-<p style="text-align: center;"><span style="font-size: 24px;"><img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240319/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" class="fr-fic fr-dib" result="success" name="ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" size="1000px/295px" filesize="38,87 kB" error="">
+<div id="imageContainer" style="cursor: pointer;">
+    <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240319/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" alt="클릭하여 링크 복사">
+</div>
+  
+</body>
+</html>
 
+
+<script>
+document.getElementById('imageContainer').onclick = function() {
+    var linkToCopy = "https://bit.ly/43dUv5W";
+    navigator.clipboard.writeText(linkToCopy).then(function() {
+        alert("링크가 복사되었습니다: " + linkToCopy);
+    }, function(err) {
+        console.error('링크 복사에 실패했습니다.', err);
+    });
+};
+</script>
+
+
+
+
+
+
+
+
+
+<!--
 <html>
 <head>
 <title>카카오톡 버튼있는 메시지 전송하기</title>
@@ -46,11 +77,7 @@
     })
   }
 </script>
-<!-- www.blackcats4567.com -->
-<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
   </body>
 </html> 
 
-<p style="text-align: center;"><a class="fr-strong" href="https://bit.ly/43dUv5W"><span style="font-size: 30px;">https://bit.ly/43dUv5W</span></a><img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240319/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_03.jpg" class="fr-fic fr-dii" name="ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_03.jpg" filesize="304,38 kB" result="success" size="1000px/1373px" error="">&nbsp;</p>
-
-
+-->

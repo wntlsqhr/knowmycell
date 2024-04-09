@@ -10,11 +10,19 @@
 <script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-<p><strong>아래 카카오톡 아이콘을 눌러 공유하세요</strong> By. 노마셀</p>
 <a id="kakao-link-btn" href="javascript:sendLink()">
   <img
     src="https://developers.kakao.com/tool/resource/static/img/button/kakaosync/complete/ko/kakao_login_large_wide.png"
   />
+	  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* 뷰포트 높이의 100% */
+    }
+	</style>
+	
 </a>
 <script type="text/javascript">
  Kakao.init('c2c589802d85b9b457bc0f43d32681a7');

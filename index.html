@@ -5,19 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>지인추천 이벤트</title>
     
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PW55L8XP');</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTSX03ZL86"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-ZTSX03ZL86');
-    </script>
-
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script>
         Kakao.init('c2c589802d85b9b457bc0f43d32681a7');
@@ -33,20 +20,14 @@
                         webUrl: 'https://knowmycell.com/article/%EC%8B%9C%ED%81%AC%EB%A6%BF-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B2%8C%EC%8B%9C%ED%8C%90/2/2369/',
                     },
                 },
-                social: {
-                    likeCount: 36000,
-                    commentCount: 11000,
-                    sharedCount: 52000,
-                },
-                buttons: [
-                    {
-                        title: '10% 할인쿠폰 받기',
-                        link: {
-                            mobileWebUrl: 'https://knowmycell.com/article/%EC%8B%9C%ED%81%AC%EB%A6%BF-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B2%8C%EC%8B%9C%ED%8C%90/2/2369/',
-                            webUrl: 'https://knowmycell.com/article/%EC%8B%9C%ED%81%AC%EB%A6%BF-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B2%8C%EC%8B%9C%ED%8C%90/2/2369/',
-                        },
+                social: { likeCount: 36000, commentCount: 11000, sharedCount: 52000 },
+                buttons: [{
+                    title: '10% 할인쿠폰 받기',
+                    link: {
+                        mobileWebUrl: 'https://knowmycell.com/article/%EC%8B%9C%ED%81%AC%EB%A6%BF-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B2%8C%EC%8B%9C%ED%8C%90/2/2369/',
+                        webUrl: 'https://knowmycell.com/article/%EC%8B%9C%ED%81%AC%EB%A6%BF-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B2%8C%EC%8B%9C%ED%8C%90/2/2369/',
                     },
-                ],
+                }],
             });
         }
     </script>
@@ -61,66 +42,60 @@
         }
 
         document.addEventListener("DOMContentLoaded", function() {
+            // id가 'copyButton'인 요소를 클릭했을 때의 동작
             document.getElementById("copyButton").addEventListener("click", function() {
-                const urlToCopy = "https://knowmycell.com/article/%EC%8B%9C%ED%81%AC%EB%A6%BF-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B2%8C%EC%8B%9C%ED%8C%90/2/2369/"; // 복사할 URL
+                const urlToCopy = "https://knowmycell.com/article/%EC%8B%9C%ED%81%AC%EB%A6%BF-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B2%8C%EC%8B%9C%ED%8C%90/2/2369/";
                 copyTextToClipboard(urlToCopy);
             });
         });
     </script>
 
     <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
+        body { margin: 0; padding: 20px; background-color: #f4f4f4; }
         .img-container {
-            display: flex; /* Flexbox 레이아웃 적용 */
-            flex-direction: column; /* 아이템들을 세로로 배열 */
-            align-items: center; /* 가운데 정렬 */
-            gap: 15px; /* 이미지 사이의 간격 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
             width: 100%;
-            max-width: 800px; /* 전체 컨테이너의 최대 너비 설정 */
-            margin: 0 auto; /* 페이지 중앙에 위치 */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .img-container img, .img-container a {
+            width: 100%;
+            height: auto;
+            display: block;
         }
         .img-container img {
-            width: 100%;  /* 부모 요소(img-container)의 너비에 맞춤 */
-            height: auto; /* 세로 길이는 비율에 맞게 자동 조절 */
-            display: block;
-            border-radius: 8px; /* 모서리를 약간 둥글게 */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .button-wrapper {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .button-wrapper img {
-            cursor: pointer;
-            width: 250px; /* 버튼 이미지 크기 조절 */
-            margin: 10px auto;
-            display: block;
+        #copyButton {
+            cursor: pointer; /* 복사 버튼 이미지에 마우스를 올리면 손가락 모양으로 변경 */
         }
     </style>
 </head>
 
 <body>
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW55L8XP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
     <div class="img-container">
-        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240924/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" alt="이벤트 안내 이미지 1" />
-        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" alt="이벤트 안내 이미지 2" />
-        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_ECB9B4ED86A120EAB3B5EC9CA0ED9598EAB8B0.png" alt="카카오톡 공유하기 버튼 이미지" />
-        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_EBA781ED81AC20EBB3B5EC82ACED9598EAB8B02028129.png" alt="링크 복사하기 버튼 이미지" />
-        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240408/1712563552996.png" alt="이벤트 안내 이미지 5" />
-    </div>
+        <a href="https://knowmycell.com/article/%EC%8B%9C%ED%81%AC%EB%A6%BF-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B2%8C%EC%8B%9C%ED%8C%90/2/2369/">
+            <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240924/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" alt="이벤트 안내 이미지 1" />
+        </a>
 
-    <div class="button-wrapper">
-        <a id="kakao-link-btn" href="javascript:sendLink()">
+        <a href="https://knowmycell.com/article/%EC%8B%9C%ED%81%AC%EB%A6%BF-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B2%8C%EC%8B%9C%ED%8C%90/2/2369/">
+            <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" alt="이벤트 안내 이미지 2" />
+        </a>
+
+        <a href="javascript:sendLink()">
             <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_ECB9B4ED86A120EAB3B5EC9CA0ED9598EAB8B0.png" alt="카카오톡 공유하기" />
         </a>
 
         <img id="copyButton" src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_EBA781ED81AC20EBB3B5EC82ACED9598EAB8B02028129.png" alt="URL 복사하기" />
+
+        <a href="https://knowmycell.com/article/%EC%8B%9C%ED%81%AC%EB%A6%BF-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B2%8C%EC%8B%9C%ED%8C%90/2/2369/">
+            <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240408/1712563552996.png" alt="이벤트 안내 이미지 5" />
+        </a>
     </div>
-</body>
+
+    </body>
 </html>

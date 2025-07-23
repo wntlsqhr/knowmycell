@@ -22,11 +22,7 @@
         gtag('config', 'G-ZTSX03ZL86');
     </script>
 
-    <p style="text-align: center;"><img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240924/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" class="fr-fic fr-dib" name="ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" filesize="290,26 kB" result="success" size="1000px/955px" error=""><a class="fr-strong" href="https://bit.ly/43dUv5W"><span style="font-size: 30px;"></span></a><span style="font-size: 24px;"><img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" class="fr-fic fr-dib" result="success" name="ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" size="1000px/295px" filesize="38,87 kB" error=""></span><span style='color: rgb(0, 0, 0); font-family: "Malgun Gothic"; font-size: 30px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;'>
-    </p>
-
     <!-- Kakao SDK -->
-    <p style="text-align: center;">
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script>
         Kakao.init('c2c589802d85b9b457bc0f43d32681a7');
@@ -59,7 +55,6 @@
             });
         }
     </script>
-    </p>
 
     <!-- URL 복사 기능 -->
     <script>
@@ -86,20 +81,21 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-end;
-        gap: 8px;
+        gap: 10px;
         margin-bottom: 20px;
     }
     .img-row img {
-        max-width: 120px;
-        width: 100%;
-        height: auto;
+        width: 120px;     /* 고정 가로 크기 */
+        height: auto;     /* 세로는 비율 자동 */
         display: block;
         border-radius: 8px;
+        object-fit: contain;
+        background: #fff;
         box-shadow: 0 2px 6px rgba(0,0,0,0.04);
     }
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
         .img-row img {
-            max-width: 32vw;
+            width: 18vw;  /* 모바일에서 5개 일렬 */
         }
     }
     </style>
@@ -112,10 +108,13 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- ✅ 이미지 5개를 순서대로 일렬로 나열 -->
     <div class="img-row">
-        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240924/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" alt="" />
+        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240924/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" alt="" />
         <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" alt="" />
-        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240408/1712563552996.png" alt="" />
+        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_ECB9B4ED86A120EAB3B5EC9CA0ED9598EAB8B0.png" alt="" />
+        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_EBA781ED81AC20EBB3B5EC82ACED9598EAB8B02028129.png" alt="" />
+        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240408/1712563552996.png" alt="" />
     </div>
 
     <div style="text-align: center;">
@@ -127,7 +126,5 @@
         <!-- URL 복사 이미지 버튼 -->
         <img id="copyButton" src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_EBA781ED81AC20EBB3B5EC82ACED9598EAB8B02028129.png" alt="URL 복사하기" style="cursor: pointer; display: block; margin: 20px auto;" />
     </div>
-
-    
 </body>
 </html>

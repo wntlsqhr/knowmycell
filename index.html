@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>지인추천 이벤트</title>
     
-    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PW55L8XP');</script>
-    <!-- End Google Tag Manager -->
-    
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTSX03ZL86"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -22,7 +18,6 @@
         gtag('config', 'G-ZTSX03ZL86');
     </script>
 
-    <!-- Kakao SDK -->
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script>
         Kakao.init('c2c589802d85b9b457bc0f43d32681a7');
@@ -56,7 +51,6 @@
         }
     </script>
 
-    <!-- URL 복사 기능 -->
     <script>
         function copyTextToClipboard(text) {
             navigator.clipboard.writeText(text).then(function() {
@@ -75,56 +69,58 @@
     </script>
 
     <style>
-    .img-row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-end;
-        gap: 10px;
-        margin-bottom: 20px;
-    }
-    .img-row img {
-        width: 120px;     /* 고정 가로 크기 */
-        height: auto;     /* 세로는 비율 자동 */
-        display: block;
-        border-radius: 8px;
-        object-fit: contain;
-        background: #fff;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-    }
-    @media (max-width: 600px) {
-        .img-row img {
-            width: 18vw;  /* 모바일에서 5개 일렬 */
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
-    }
+        .img-container {
+            display: flex; /* Flexbox 레이아웃 적용 */
+            flex-direction: column; /* 아이템들을 세로로 배열 */
+            align-items: center; /* 가운데 정렬 */
+            gap: 15px; /* 이미지 사이의 간격 */
+            width: 100%;
+            max-width: 800px; /* 전체 컨테이너의 최대 너비 설정 */
+            margin: 0 auto; /* 페이지 중앙에 위치 */
+        }
+        .img-container img {
+            width: 100%;  /* 부모 요소(img-container)의 너비에 맞춤 */
+            height: auto; /* 세로 길이는 비율에 맞게 자동 조절 */
+            display: block;
+            border-radius: 8px; /* 모서리를 약간 둥글게 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
+        }
+        .button-wrapper {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-wrapper img {
+            cursor: pointer;
+            width: 250px; /* 버튼 이미지 크기 조절 */
+            margin: 10px auto;
+            display: block;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW55L8XP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- ✅ 이미지 5개를 순서대로 일렬로 나열 -->
-    <div class="img-row">
-        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240924/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" alt="" />
-        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" alt="" />
-        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_ECB9B4ED86A120EAB3B5EC9CA0ED9598EAB8B0.png" alt="" />
-        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_EBA781ED81AC20EBB3B5EC82ACED9598EAB8B02028129.png" alt="" />
-        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240408/1712563552996.png" alt="" />
+    <div class="img-container">
+        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240924/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" alt="이벤트 안내 이미지 1" />
+        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" alt="이벤트 안내 이미지 2" />
+        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_ECB9B4ED86A120EAB3B5EC9CA0ED9598EAB8B0.png" alt="카카오톡 공유하기 버튼 이미지" />
+        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_EBA781ED81AC20EBB3B5EC82ACED9598EAB8B02028129.png" alt="링크 복사하기 버튼 이미지" />
+        <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240408/1712563552996.png" alt="이벤트 안내 이미지 5" />
     </div>
 
-    <div style="text-align: center;">
-        <!-- 카카오 공유 버튼 -->
+    <div class="button-wrapper">
         <a id="kakao-link-btn" href="javascript:sendLink()">
-            <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_ECB9B4ED86A120EAB3B5EC9CA0ED9598EAB8B0.png" alt="카카오톡 공유하기" style="display: block; margin: 0 auto;" />
+            <img src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_ECB9B4ED86A120EAB3B5EC9CA0ED9598EAB8B0.png" alt="카카오톡 공유하기" />
         </a>
 
-        <!-- URL 복사 이미지 버튼 -->
-        <img id="copyButton" src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_EBA781ED81AC20EBB3B5EC82ACED9598EAB8B02028129.png" alt="URL 복사하기" style="cursor: pointer; display: block; margin: 20px auto;" />
+        <img id="copyButton" src="https://ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_EBA781ED81AC20EBB3B5EC82ACED9598EAB8B02028129.png" alt="URL 복사하기" />
     </div>
 </body>
 </html>

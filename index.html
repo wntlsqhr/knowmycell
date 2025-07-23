@@ -78,6 +78,31 @@
             });
         });
     </script>
+
+    <style>
+    .img-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+    .img-row img {
+        max-width: 120px;
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    @media (max-width: 480px) {
+        .img-row img {
+            max-width: 32vw;
+        }
+    }
+    </style>
 </head>
 
 <body>
@@ -87,18 +112,22 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div style="text-align: center;">
-    <!-- Kakao 공유 버튼 -->
-    <a id="kakao-link-btn" href="javascript:sendLink()">
-        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_ECB9B4ED86A120EAB3B5EC9CA0ED9598EAB8B0.png" alt="카카오톡 공유하기" style="display: block; margin: 0 auto;" />
-    </a>
+    <div class="img-row">
+        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240924/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_01.jpg" alt="" />
+        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/ECB694ECB29CEC9DB8_EB9E9CEB94A9ED8E98EC9DB4ECA780_02.jpg" alt="" />
+        <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240408/1712563552996.png" alt="" />
+    </div>
 
-    <!-- URL 복사 이미지 버튼 -->
-    <img id="copyButton" src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_EBA781ED81AC20EBB3B5EC82ACED9598EAB8B02028129.png" alt="URL 복사하기" style="cursor: pointer; display: block; margin: 20px auto;" />
-    </div>    
+    <div style="text-align: center;">
+        <!-- 카카오 공유 버튼 -->
+        <a id="kakao-link-btn" href="javascript:sendLink()">
+            <img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_ECB9B4ED86A120EAB3B5EC9CA0ED9598EAB8B0.png" alt="카카오톡 공유하기" style="display: block; margin: 0 auto;" />
+        </a>
+
+        <!-- URL 복사 이미지 버튼 -->
+        <img id="copyButton" src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240412/EBB284ED8ABC_EBA781ED81AC20EBB3B5EC82ACED9598EAB8B02028129.png" alt="URL 복사하기" style="cursor: pointer; display: block; margin: 20px auto;" />
+    </div>
 
     
 </body>
 </html>
-
-<p style="text-align: center;"><span style='color: rgb(0, 0, 0); font-family: "Malgun Gothic"; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'><img src="//ecimg.cafe24img.com/pg340b80271647093/fkark12/web/upload/NNEditor/20240408/1712563552996.png" class="fr-fic fr-dii" filesize="437,40 kB" size="1000px/1373px" style="position: relative; max-width: 100%; display: inline-block; float: none; vertical-align: bottom; margin-left: 0px; margin-right: 0px; color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" result="success" name="1712563552996.png" error="">&nbsp;</span></p>
